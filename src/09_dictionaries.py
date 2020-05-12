@@ -33,13 +33,12 @@ waypoints = [
     }
 ]
 
-print(waypoints)
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-myWaypoint = dict(lat = 69, lon = -420, name = "yes")
+newWaypoint = {'lat': 69, 'lon': -420, 'name': 'yes'}
+waypoints.append(newWaypoint)
 
-myWaypoint(waypoints)
 
 print(waypoints)
 
@@ -49,6 +48,11 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
+waypoints[0].update({'lon': -130, 'name': 'not a place'})
+print(waypoints)
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+
+for key in waypoints:
+    print(key)

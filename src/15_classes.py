@@ -1,5 +1,10 @@
 # Make a class LatLon that can be passed parameters `lat` and `lon` to the
 # constructor
+class LatLon:
+    pass
+
+lat = LatLon()
+lon = LatLon()
 
 # YOUR CODE HERE
 
