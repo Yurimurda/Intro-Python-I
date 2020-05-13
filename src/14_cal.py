@@ -39,4 +39,17 @@ month, year = today.month, today.year
 
 cal = calendar.TextCalendar(firstweekday=6)
 
-cal.prmonth(2020, 5)
+# cal.prmonth(2020, 5)
+
+if len(sys.argv) == 1:
+  calendar.prmonth(today.year, today.month)
+
+elif len(sys.argv) == 2:
+  calendar.prmonth(today.year, int(sys.argv[1]))
+
+elif len(sys.argv) == 3:
+  calendar.prmonth(int(sys.argv[2]), int(sys.argv[1]))
+
+else:
+  print("Usage: filename month year")
+  sys.exit(1)
